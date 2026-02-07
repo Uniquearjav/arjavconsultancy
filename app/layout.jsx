@@ -1,0 +1,39 @@
+import Header from "@/components/header";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata = {
+  title: "Arjav Consultancy - Accounting, Tax & Financial Services",
+  description: "Expert accounting services, income tax returns, mortgage loans, and comprehensive financial solutions for individuals and businesses.",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+        <Header />
+        {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
