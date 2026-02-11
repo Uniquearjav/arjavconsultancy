@@ -22,9 +22,9 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="/" >Home</Link>
-            <Link href="/about" >About</Link>
-            <Link href="/services" >Services</Link>
-            <Link href="/contact" >Contact</Link>
+            <Link href="/#services" >Services</Link>
+            <Link href="/#about" >About</Link>
+            <Link href="/#contact" >Contact Us</Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -49,9 +49,9 @@ const Header = () => {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link href="/" className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent">Home</Link>
-            <Link href="/about" className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent">About</Link>
-            <Link href="/services" className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent">Services</Link>
-            <Link href="/contact" className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent">Contact</Link>
+            <Link href="/#services" className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent">Services</Link>
+            <Link href="/#about" className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent">About</Link>
+            <Link href="/#contact" className="block px-3 py-2 rounded-md text-base font-medium text-muted-foreground hover:text-foreground hover:bg-accent">Contact</Link>
           </div>
         </div>
       )}

@@ -106,7 +106,7 @@ export default function Page() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-muted/50">
+      <section className="py-20 bg-muted/50" id='services'>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -142,7 +142,7 @@ export default function Page() {
       </section>
 
       {/* Founder Section */}
-      <section className="py-20 ">
+      <section className="py-20 " id="about">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
@@ -326,7 +326,7 @@ export default function Page() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="py-20" id='contact'>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold  mb-4">
             Need Help With Your Finances?
@@ -346,7 +346,7 @@ export default function Page() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-green-600 text-secondary-foreground py-12">
+      {/* <footer className="bg-green-600 text-secondary-foreground py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
@@ -380,7 +380,7 @@ export default function Page() {
             <p>&copy; 2026 Arjav Consultancy. All rights reserved.</p>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </main>
   );
 }
