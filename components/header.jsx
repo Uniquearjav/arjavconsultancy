@@ -3,7 +3,6 @@
 import { Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
-import { ModeToggle } from './themetoggle'
 import Image from 'next/image'
 
 
@@ -26,7 +25,6 @@ const Header = () => {
             <Link href="/about" >About</Link>
             <Link href="/services" >Services</Link>
             <Link href="/contact" >Contact</Link>
-            <ModeToggle />
           </nav>
 
           {/* Mobile Menu Button */}

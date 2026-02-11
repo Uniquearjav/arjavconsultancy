@@ -3,6 +3,7 @@ import { Calculator, ClipboardCheck, Facebook, FileText, Heart, Home, Linkedin, 
 import Image from 'next/image';
 import Link from 'next/link';
 import Hero from '@/public/hero.jpg';
+import Jitendra_Jain from '@/public/owner.jpeg'
 export default function Page() {
   const services = [
     {
@@ -122,7 +123,7 @@ export default function Page() {
               return (
                 <div
                   key={index}
-                  className="bg-card rounded-xl p-6 shadow-sm hover:shadow-xl transition-shadow duration-300 border"
+                  className="bg-card rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-green-600 hover:bg-green-100 transition-shadow duration-300 border"
                 >
                   <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-primary" />
@@ -141,14 +142,14 @@ export default function Page() {
       </section>
 
       {/* Founder Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Meet Jitendra Jain
               </h2>
-              <h3 className="text-xl text-primary mb-6">
+              <h3 className="text-xl font-bold mb-6">
                 Founder & Your Financial Guide
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
@@ -158,7 +159,7 @@ export default function Page() {
                 Whether you need help with taxes, want to buy a home, or need health insurance - he makes everything simple and easy to understand.
               </p>
               
-              <div className="bg-muted/50 rounded-lg p-6 mb-6">
+              <div className="bg-muted/60 rounded-lg p-6 mb-6">
                 <h4 className="font-semibold text-lg mb-3">What He Does:</h4>
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -208,13 +209,13 @@ export default function Page() {
               </div>
             </div>
             <div className="order-1 md:order-2 flex justify-center">
-              <div className="relative w-80 h-80 rounded-2xl overflow-hidden shadow-xl border-4 border-primary/10 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                {/* Replace with actual photo: <Image src="/jitendra-jain.jpg" alt="Jitendra Jain" fill className="object-cover" priority /> */}
-                <div className="text-center">
+              <div className="relative w-80 h-full rounded-2xl overflow-hidden shadow-xl border-4 border-primary/10 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                <Image src={Jitendra_Jain} alt="Jitendra Jain"  priority />
+                {/* <div className="text-center">
                   <div className="text-8xl font-bold text-primary mb-4">JJ</div>
                   <p className="text-xl font-semibold">Jitendra Jain</p>
                   <p className="text-sm text-muted-foreground">Founder</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -229,7 +230,7 @@ export default function Page() {
               Why People Trust Us
             </h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid  md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
@@ -265,7 +266,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-card rounded-2xl p-8 md:p-12 border shadow-lg">
+            <div className="bg-green-200 rounded-2xl p-8 md:p-12 border hover:border-green-600 border-green-400 shadow-lg">
               <div className="text-center space-y-8">
                 <div>
                   <div className="text-5xl md:text-6xl font-bold text-primary mb-2">80+</div>
@@ -303,7 +304,7 @@ export default function Page() {
                 key={index}
                 className="bg-card rounded-xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border relative"
               >
-                <Quote className="w-10 h-10 text-primary/20 absolute top-6 right-6" />
+                <Quote className="w-10 h-10 text-green-500 absolute top-6 right-6" />
                 <div className="mb-4">
                   <div className="flex gap-1 mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -325,19 +326,19 @@ export default function Page() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary py-20">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold  mb-4">
             Need Help With Your Finances?
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Call us today for a free chat. Let\'s see how we can help you.
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Call us today for a free chat. Let's see how we can help you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button asChild size="lg" variant="secondary" className="text-lg px-8">
-              <Link href="tel:+919414269444" className='flex items-center'>
+              <Link href="tel:+918114480885" className='flex items-center'>
                 <Phone className="w-5 h-5 mr-2" />
-                Call Now: +91 9414269444
+                Call Now: +91 8114480885
               </Link>
             </Button>
           </div>
@@ -345,7 +346,7 @@ export default function Page() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-secondary text-secondary-foreground py-12">
+      <footer className="bg-green-600 text-secondary-foreground py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
@@ -367,8 +368,8 @@ export default function Page() {
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 opacity-80">
                 <li>
-                  <b>Phone No:</b> <Link href="tel:+919414269444" className="hover:opacity-100 transition-opacity">
-                    +91 9414269444
+                  <b>Phone No:</b> <Link href="tel:+918114480885" className="hover:opacity-100 transition-opacity">
+                    +91 8114480885
                   </Link>
                 </li>
                 <li><b>Hours:</b>  Mon-Fri 9AM-6PM</li>
